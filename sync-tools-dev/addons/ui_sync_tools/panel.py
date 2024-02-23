@@ -5,7 +5,7 @@ from . import operators
 
 class OBJECT_PT_structured(bpy.types.Panel):
     """Creates a Panel in the object context of the properties editor"""
-    bl_label = "Stan Tools"
+    bl_label = "Sync Tools"
     bl_idname = "VERYSIMPLE_PT_layout"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
