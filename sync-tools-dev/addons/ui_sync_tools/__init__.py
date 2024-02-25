@@ -3,7 +3,7 @@ bl_info = {
     "name": "Synchronized Flight Tools",
     "author": "Stan Humphries",
     "version": (0, 1),
-    "blender": (3, 2, 0),
+    "blender": (3, 3, 0),
     "description": "Tools to speed up creating flight plans for synchronized flight using Skybrush Blender Studio.",
     "category": "Interface",
 }

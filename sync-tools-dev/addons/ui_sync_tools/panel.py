@@ -4,12 +4,17 @@ from . import operators
 
 
 class OBJECT_PT_structured(bpy.types.Panel):
-    """Creates a Panel in the object context of the properties editor"""
+    """Custom Blender panel that allows the user to speed up
+    the process of creating a synchronized flight plan.
+    """
+
+    bl_idname = "OBJECT_PT_stan_syncflight_panel"
     bl_label = "Sync Tools"
-    bl_idname = "VERYSIMPLE_PT_layout"
-    bl_space_type = 'VIEW_3D'
-    bl_region_type = 'UI'
-    ## bl_context = 'object'
+
+    # The following three settings determine that the Synchronized Flight panel gets
+    # added to the sidebar of the 3D view
+    bl_space_type = "VIEW_3D"
+    bl_region_type = "UI"
     bl_category = 'Synchronized Flight'
 
 
