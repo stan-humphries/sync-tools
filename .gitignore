@@ -1,3 +1,4 @@
-.DS_Store
+__pycache__
 *.pyc
-__pycache__/
+sync-tools-dev/addons/ui_sync_tools/__pycache__/__init__.cpython-310.pyc
+sync-tools-dev/addons/ui_sync_tools/__pycache__/panel.cpython-310.pyc
