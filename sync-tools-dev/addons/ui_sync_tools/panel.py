@@ -9,7 +9,7 @@ class OBJECT_PT_structured(bpy.types.Panel):
     """
 
     bl_idname = "OBJECT_PT_stan_syncflight_panel"
-    bl_label = "Sync Tools"
+    bl_label = "Sync Flt Tools"
 
     # The following three settings determine that the Synchronized Flight panel gets
     # added to the sidebar of the 3D view
@@ -21,6 +21,8 @@ class OBJECT_PT_structured(bpy.types.Panel):
     def draw(self, context):
         layout = self.layout
         icons = img_loader.get_icons_collection()
+
+        layout.operator(operators.STAN_TEST.bl_idname)
 
         row = layout.row(align=True)
         row.label(text="Scene Objects", icon_value=icons['pack_64'].icon_id)
@@ -38,7 +40,7 @@ class OBJECT_PT_structured(bpy.types.Panel):
             grid.label(text=ob.name, icon=f'OUTLINER_OB_{ob.type}')
         
         layout.operator(operators.TRANSFORM_OT_random_location.bl_idname)
-
+    
 
 
 def register_classes():
